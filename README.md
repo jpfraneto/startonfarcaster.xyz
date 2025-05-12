@@ -56,3 +56,7 @@ Mini Apps are web applications that can be discovered and used within Farcaster 
 5. Deploy to [orbiter](https://orbiter.host) (best static site host ever)
 
 `orbiter deploy`
+
+# Support
+
+If you have any questions about this repo in specific or Farcaster in general, please reach out to [@jpfraneto.eth](https://warpcast.com/~/inbox/create/16098?text=gm) on farcaster. I'm here to help.
