@@ -28,7 +28,7 @@ const DayPicker: React.FC<DayPickerProps> = ({ chosenDay, setChosenDay }) => {
   };
 
   return (
-    <div className="w-full bg-white  mb-1">
+    <div className="w-full bg-white mb-1">
       {/* Progress bar */}
       <div className="relative h-1.5 bg-[#c8b9e0]/10 rounded-full w-full mb-2">
         <div

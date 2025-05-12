@@ -1,7 +1,7 @@
-// Updated Buttons.jsx to exactly match the screenshot
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import useScrollVisibility from "../hooks/useScrollVisibility";
+import { days } from "../lib/constants";
+import sdk from "@farcaster/frame-sdk";
 
 interface ButtonsProps {
   chosenDay: number;
@@ -10,7 +10,20 @@ interface ButtonsProps {
 
 const Buttons: React.FC<ButtonsProps> = ({ chosenDay, setChosenDay }) => {
   const totalDays = 7;
-  const isNearBottom = useScrollVisibility(200);
+  const [isNearBottom, setIsNearBottom] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const nearBottom = scrollPosition > document.body.scrollHeight - 200;
+      setIsNearBottom(nearBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check initial position
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handlePrevious = () => {
     if (chosenDay > 1) {
@@ -24,6 +37,10 @@ const Buttons: React.FC<ButtonsProps> = ({ chosenDay, setChosenDay }) => {
       setChosenDay(chosenDay + 1);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
+  };
+
+  const handleViewProfile = () => {
+    sdk.actions.viewProfile({ fid: 10081 });
   };
 
   return (
@@ -60,6 +77,24 @@ const Buttons: React.FC<ButtonsProps> = ({ chosenDay, setChosenDay }) => {
           Next
         </motion.button>
       </motion.div>
+      <div className="text-center text-sm text-[#c8b9e0]/70 mt-2 mb-6">
+        written by{" "}
+        <button
+          onClick={handleViewProfile}
+          className="text-[#c8b9e0] hover:underline cursor-pointer"
+        >
+          @katekornish
+        </button>
+        {"     ·     "}
+        <a
+          href={days[chosenDay - 1]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#c8b9e0] hover:underline"
+        >
+          original post
+        </a>
+      </div>
     </AnimatePresence>
   );
 };

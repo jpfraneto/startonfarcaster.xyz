@@ -36,7 +36,7 @@ const BlogPost = ({
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center w-full max-w-2xl mx-auto px-4 py-6 bg-white"
+      className="flex flex-col items-center justify-center w-full max-w-2xl mx-auto px-4 py-2 bg-white"
       initial="hidden"
       animate="visible"
       variants={containerVariants}

@@ -1,120 +1,58 @@
-# Farcaster Challenge
+# Start On Farcaster
 
-A modern web application built with React, TypeScript, and Vite, featuring Farcaster Frame integration.
+A Farcaster Mini App designed to help new users build their identity on Farcaster and evolve from newcomers to active community members.
 
-## 🚀 Features
+[Launch in Warpcast](https://warpcast.com/~/frames/launch?domain=startonfarcaster.xyz)
 
-- React 19 with TypeScript support
-- Vite for lightning-fast development and building
-- Farcaster Frame SDK integration
-- TailwindCSS for styling
-- Framer Motion for smooth animations
-- ESLint with TypeScript and React-specific rules
-- Hot Module Replacement (HMR)
+## 📱 What is this?
 
-## 📦 Prerequisites
+Start On Farcaster is a Mini App that guides users through a step-by-step process to create a good looking Farcaster account, post engaging content, and connect with the community. It's based on a 7-day challenge created by [Kate Kornish](https://warpcast.com/katekornish) to help users get rid of the spam label and build a meaningful presence on Farcaster.
 
-- Node.js (Latest LTS version recommended)
-- npm, yarn, or bun package manager
+The app walks users through the following daily challenges:
 
-## 🛠️ Installation
+1. [Getting started with Farcaster](https://paragraph.com/@katekornish/get-rid-of-spam-label-7-days-challenge)
+2. [Establishing identity and purpose](https://paragraph.com/@katekornish/step-2-identity-and-purpose)
+3. [Creating a compelling profile](https://paragraph.com/@katekornish/7-day-challenge-get-rid-of-the-spam-label-on-farcaster-step-3)
+4. [Building connections](https://paragraph.com/@katekornish/7-day-challenge-get-rid-of-the-spam-label-on-farcaster-step-4)
+5. [Engaging with content](https://paragraph.com/@katekornish/7-day-challenge-get-rid-of-the-spam-label-on-farcaster-step-5)
+6. [Creating valuable content](https://paragraph.com/@katekornish/7-day-challenge-get-rid-of-the-spam-label-on-farcaster-step-6)
+7. [Becoming an active community member](https://paragraph.com/@katekornish/7-day-challenge-get-rid-of-the-spam-label-on-farcaster-step-7)
+
+Each day links to a detailed guide published on Paragraph that explains the concepts and provides actionable steps.
+
+## 🚀 Technical Overview
+
+This is a Vite application built with React, TypeScript, and TailwindCSS. It's designed as a Farcaster Mini App, which means it can be launched directly within Farcaster clients like Warpcast.
+
+### What are Farcaster Mini Apps?
+
+Mini Apps are web applications that can be discovered and used within Farcaster clients. They can access native Farcaster features like authentication, notifications, and wallet interactions through the Farcaster Frame SDK.
+
+## 🛠️ Development
+
+### Prerequisites
+
+- [Bun](https://bun.sh/) - Fast JavaScript runtime and package manager
+- A Farcaster account (to test the app)
+
+### Local Development
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/farcaster-challenge.git
-cd farcaster-challenge
-```
+`git clone https://github.com/jpfraneto/startonfarcaster.xyz`
 
-2. Install dependencies:
+2. Install Dependencies:
 
-```bash
-npm install
-# or
-yarn
-# or
-bun install
-```
+`bun install`
 
-## 🏃‍♂️ Development
+3. Run dev environment
 
-To start the development server:
+`bun run dev`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-bun dev
-```
+4. Build your project
 
-The application will be available at `http://localhost:5173`
+`bun run build`
 
-## 🏗️ Building for Production
+5. Deploy to [orbiter](https://orbiter.host) (best static site host ever)
 
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
-# or
-bun run build
-```
-
-To preview the production build:
-
-```bash
-npm run preview
-# or
-yarn preview
-# or
-bun run preview
-```
-
-## 🧪 Linting
-
-To run the linter:
-
-```bash
-npm run lint
-# or
-yarn lint
-# or
-bun run lint
-```
-
-## 🛠️ Tech Stack
-
-- **Frontend Framework:** React 19
-- **Language:** TypeScript
-- **Build Tool:** Vite
-- **Styling:** TailwindCSS
-- **Animations:** Framer Motion
-- **Blockchain Integration:** Farcaster Frame SDK
-- **Code Quality:** ESLint with TypeScript and React plugins
-
-## 📝 Project Structure
-
-```
-farcaster-challenge/
-├── src/              # Source files
-├── public/           # Static assets
-├── dist/            # Production build output
-├── index.html       # Entry HTML file
-├── vite.config.ts   # Vite configuration
-├── tsconfig.json    # TypeScript configuration
-└── package.json     # Project dependencies and scripts
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+`orbiter deploy`
