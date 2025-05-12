@@ -1,0 +1,6 @@
+{
+  "domain": "farcaster-challenge",
+  "buildCommand": "npm run build",
+  "buildDir": "dist",
+  "siteId": "0879d72a-3f21-4ead-940f-f3658269a4d6"
+}

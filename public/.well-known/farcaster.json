@@ -1,0 +1,26 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjE2MDk4LCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4YUIyMERlOGY1QTRmOGUxNDdCYWFDOUQxZjZlMjM2ODYxNDg1NTE2QSJ9",
+    "payload": "eyJkb21haW4iOiJzdGFydG9uZmFyY2FzdGVyLnh5eiJ9",
+    "signature": "MHgwNjAxNzgzMDY2YmQ2NWRjYTM5NDk4ZmNlYjU0MWZiOGM2ZTVjMDYzODkwMGQzN2QzNDc4OGZmNWRhNjIzMjczM2Y2ZjhmY2JlODk1NjY3MDU4ZGM1N2RkMjJmMTUzZTlhOGM1N2VhNWNkZmVlNTE5NjdmYTY3YWJmM2RmMTczOTFi"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Start On Farcaster",
+    "iconUrl": "https://startonfarcaster.xyz/icon.png",
+    "homeUrl": "https://startonfarcaster.xyz",
+    "imageUrl": "https://startonfarcaster.xyz/image.gif",
+    "buttonTitle": "Launch",
+    "splashImageUrl": "https://startonfarcaster.xyz/splash.png",
+    "splashBackgroundColor": "#C8B9E0",
+    "subtitle": "Build your identity on Farcaster",
+    "description": "Start On Farcaster is a guide to help you build your identity on Farcaster. It's a step by step guide to help you create a good looking account, post content, and communicate with others.",
+    "primaryCategory": "education",
+    "tags": ["farcaster", "identity", "guide", "learning", "growth"],
+    "heroImageUrl": "https://startonfarcaster.xyz/image.gif",
+    "tagline": "Build your identity on Farcaster",
+    "ogTitle": "Start On Farcaster",
+    "ogDescription": "Build your identity on Farcaster",
+    "ogImageUrl": "https://startonfarcaster.xyz/image.gif"
+  }
+}

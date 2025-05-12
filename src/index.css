@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+html {
+  background-color: white;
+}
+
+.body {
+  color: #433173;
+  background-color: white;
+}
+
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
